@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+:root {
+  height: 100vh;
+  width: 100vw;
+  background: rgb(41, 75, 41);
+  background: linear-gradient(
+    180deg,
+    rgb(41, 75, 41) 20%,
+    rgb(219, 231, 201) 80%
+  );
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  /* flex-direction: column; */
+}
+
+h1 {
+  position: relative;
+  font-size: 40px;
+  top: 50px;
+  width: 100%;
+  height: 3rem;
+  text-align: center;
+}
+
+@media (max-width: 500px) {
+  h1 {
+    font-size: 25px;
+    height: 1.5rem;
+  }
+}

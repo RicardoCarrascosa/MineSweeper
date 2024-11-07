@@ -1,0 +1,76 @@
+.cell {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-items: center;
+  background-color: rgb(121, 134, 69);
+  border: 1px solid rgb(145, 79, 30);
+}
+.size6 {
+  width: 80px;
+  height: 80px;
+  font-size: 40px;
+}
+.size8 {
+  width: 60px;
+  height: 60px;
+  font-size: 30px;
+}
+.size12 {
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+}
+
+.cell > p {
+  width: 100%;
+  text-align: center;
+  font-weight: 700;
+}
+
+.isFlag {
+  background-color: gray;
+  border: 1.5px dashed yellow;
+  transition: all 0.5s ease;
+}
+
+.isVisible {
+  background-color: rgb(162, 139, 85);
+  transition: all 0.5s;
+}
+
+.isVisible.val1 {
+  color: blue;
+}
+.isVisible.val2 {
+  color: red;
+}
+.isVisible.val3 {
+  color: green;
+}
+.isVisible.val4 {
+  color: purple;
+}
+.isVisible.val5 {
+  color: orangered;
+}
+.isVisible.val6 {
+  color: darkolivegreen;
+}
+@media (max-width: 500px) {
+  .size6 {
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+  }
+  .size8 {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+  }
+  .size12 {
+    width: 25px;
+    height: 25px;
+    font-size: 13px;
+  }
+}
