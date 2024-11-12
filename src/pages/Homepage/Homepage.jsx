@@ -1,7 +1,7 @@
 import React from 'react'
 import './homepage.css'
 import { games } from '../../utils/gamesDB'
-import GameCard from '../../components/GameCard/GameCard'
+import GameCard from '../../components/GameCard/GameCard.jsx'
 export const Homepage = () => {
   return (
     <div className='homePage'>

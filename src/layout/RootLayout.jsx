@@ -1,4 +1,3 @@
-import React, { useEffect, useState } from 'react'
 import { Link, Outlet, useLocation } from 'react-router-dom'
 import './rootLayout.css'
 import useNavButtonFind from '../hooks/useNavButtonFind'

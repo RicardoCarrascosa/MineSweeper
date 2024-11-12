@@ -1,5 +1,3 @@
-import React, { useState } from 'react'
-
 const useNavButtonFind = (location, pages) => {
   let previus = pages.slice(-1)
   let next = [pages[1]]
