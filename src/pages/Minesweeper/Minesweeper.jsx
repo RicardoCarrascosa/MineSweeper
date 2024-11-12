@@ -1,6 +1,6 @@
 import React from 'react'
 import './minesweeper.css'
-import Board from '../../components/minesweeper/Board/Board'
+import Board from '../../components/mineSweeper/Board/Board'
 
 export const Minesweeper = () => {
   return (
