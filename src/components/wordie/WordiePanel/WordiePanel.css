@@ -1,0 +1,106 @@
+.wordieGame {
+  position: relative;
+  top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  width: 100%;
+  gap: 10px;
+  background-color: rgba(165, 151, 139, 0.5);
+  border-radius: 20px;
+  box-shadow:
+    0 4px 8px 0 rgba(0, 0, 0, 0.4),
+    0 10px 20px 0 rgba(0, 0, 0, 0.2);
+}
+.wordieMenu {
+  display: flex;
+  width: 100%;
+  justify-content: right;
+  align-items: center;
+  & > button {
+    border-radius: 10px;
+    padding: 5px 10px;
+    font-size: 25px;
+    background-color: transparent;
+    border: none;
+    color: white;
+    &:hover {
+      background-color: goldenrod;
+      color: black;
+    }
+    transition: all 0.2s ease;
+  }
+}
+
+.inputBoard {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  height: 60px;
+
+  & > input {
+    text-align: center;
+    font-size: 50px;
+    height: 100%;
+    width: 200px;
+    background-color: grey;
+    cursor: pointer;
+    /* outline: none; */
+  }
+  & > button {
+    border-radius: 10px;
+    padding: 5px 10px;
+    font-size: 25px;
+    background-color: transparent;
+    border: none;
+    color: white;
+    &:hover {
+      background-color: goldenrod;
+      color: black;
+    }
+    transition: all 0.5s ease;
+  }
+}
+
+.wordiePanel {
+  /* background-color: bisque; */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.wordieMessage {
+  font-size: 30px;
+  padding: 20px;
+  border-radius: 20px;
+  width: 100%;
+  text-align: center;
+  box-shadow:
+    0 4px 8px 0 rgba(0, 0, 0, 0.4),
+    0 10px 20px 0 rgba(0, 0, 0, 0.2);
+}
+.noMessage {
+  display: none;
+}
+.youWin {
+  background-color: rgba(0, 128, 0, 0.8);
+
+  position: absolute;
+  top: 250px;
+  width: 350px;
+  height: 100px;
+  font-size: 50px;
+}
+
+.alertMsg {
+  background-color: orange;
+}
+.youLoose {
+  background-color: rgba(150, 16, 38, 0.8);
+  position: absolute;
+  top: 200px;
+  width: 350px;
+  /* height: 100px; */
+  font-size: 50px;
+}

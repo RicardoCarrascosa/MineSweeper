@@ -1,0 +1,32 @@
+.rowWordie {
+  display: flex;
+  width: 100%;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+}
+.WCell {
+  height: 50px;
+  width: 50px;
+  border: 1px black solid;
+  display: flex;
+  border-radius: 5px;
+  justify-items: center;
+  align-items: center;
+  background-color: lightgray;
+  transition: all 1s ease;
+}
+.WCell > p {
+  width: 100%;
+  font-size: 30px;
+  text-align: center;
+}
+
+.isIn {
+  background-color: yellow;
+  transition: all 1.5s ease;
+}
+.isPos {
+  background-color: green;
+  transition: all 2s ease;
+}

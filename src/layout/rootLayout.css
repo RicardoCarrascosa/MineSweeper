@@ -1,0 +1,48 @@
+.gamePool {
+  width: 480px;
+}
+.nav {
+  width: 100%;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  & > a {
+    background-color: rgba(218, 165, 32, 0.3);
+    padding: 10px 20px;
+    border: 1px solid goldenrod;
+    box-shadow:
+      0 4px 8px 0 rgba(0, 0, 0, 0.4),
+      0 10px 20px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    cursor: pointer;
+    color: black;
+    &:hover {
+      background-color: goldenrod;
+    }
+
+    transition: all 0.5s ease;
+  }
+  & > h1 {
+    font-size: 40px;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.isHome {
+  display: none;
+}
+
+@media (max-width: 500px) {
+  .gamePool {
+    width: 350px;
+  }
+  .nav > h1 {
+    font-size: 25px;
+  }
+  .nav > h1 {
+    padding: 5px 10px;
+  }
+}

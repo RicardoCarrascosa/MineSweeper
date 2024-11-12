@@ -2,7 +2,7 @@ import { useReducer } from 'react'
 import './board.css'
 import React from 'react'
 import Cell from '../cell/Cell'
-import { boardReducer, init } from '../../utils/boardReducer'
+import { boardReducer, init } from '../../../utils/minesweeper/boardReducer'
 
 const Board = () => {
   const [state, dispatch] = useReducer(boardReducer, init)

@@ -1,5 +1,7 @@
 // Create Board
 
+import { ramdomNum } from '../randomNum'
+
 export default (nRow = 8, nCol = 8, bombs = 8) => {
   let board = []
   let mineLocation = []
@@ -52,8 +54,4 @@ export default (nRow = 8, nCol = 8, bombs = 8) => {
     })
   })
   return board
-}
-
-const ramdomNum = (min, max) => {
-  return Math.floor(Math.random() * (max - min) + min)
 }
