@@ -1,12 +1,12 @@
 import React from 'react'
 import './homepage.css'
 import { games } from '../../utils/gamesDB'
-import GameCard from '../../components/GameCard/GameCard'
+import HomeCard from '../../components/HomeCard/HomeCard'
 export const Homepage = () => {
   return (
     <div className='homePage'>
       {games.map((game, key) => (
-        <GameCard key={key} game={game} />
+        <HomeCard key={key} game={game} />
       ))}
     </div>
   )
