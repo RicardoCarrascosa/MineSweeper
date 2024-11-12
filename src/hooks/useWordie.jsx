@@ -25,13 +25,26 @@ export const useWordie = (word) => {
     })
     return formatedInput
   }
+
   const checkWin = (input, word) => {
     if (input === word) {
       setValid(true)
       setMessage('You Won!')
+    } else if (turn >= 5) {
+      setOver(true)
+      setMessage('You Lost! you used all your turns!')
     } else {
       setValid(false)
       setMessage('')
+    }
+  }
+  const checkLoose = (turn, isValid) => {
+    console.log(isValid)
+    if (!isValid) {
+      if (turn >= 5) {
+        setOver(true)
+        setMessage('You Lost! you used all your turns!')
+      }
     }
   }
   const checkInput = (rawInput, word, isValid) => {
@@ -41,9 +54,8 @@ export const useWordie = (word) => {
         setMessage('Word needs to be 5 Character')
       } else if (historical.includes(input)) {
         setMessage('Alredy tried this word')
-      } else if (turn > 5) {
-        setOver(true)
-        setMessage('You Lost! you used all your turns!')
+      } else if (/[^a-zA-Z]/.test(input)) {
+        setMessage('Only Letters!')
       } else {
         sethistorical([input, ...historical])
         setGuesses([formatInput(input, word), ...guesses.slice(0, -1)])

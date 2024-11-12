@@ -43,7 +43,7 @@ const WordiePanel = () => {
         ))}
       </div>
       <div
-        className={`${message ? 'wordieMessage' : 'noMessage'} ${isValid ? 'youWin' : 'alertMsg'} ${isOver && 'youLoose'}`}
+        className={`${message ? 'wordieMessage' : 'noMessage'} ${isValid ? 'youWinW' : 'alertMsg'} ${isOver && 'youLooseW'}`}
         // ! Falta el you loose
       >
         {message}

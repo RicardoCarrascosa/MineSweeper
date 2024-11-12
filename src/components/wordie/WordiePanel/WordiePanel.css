@@ -83,7 +83,7 @@
 .noMessage {
   display: none;
 }
-.youWin {
+.youWinW {
   background-color: rgba(0, 128, 0, 0.8);
 
   position: absolute;
@@ -96,7 +96,7 @@
 .alertMsg {
   background-color: orange;
 }
-.youLoose {
+.youLooseW {
   background-color: rgba(150, 16, 38, 0.8);
   position: absolute;
   top: 200px;
