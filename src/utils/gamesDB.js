@@ -2,12 +2,12 @@ export const games = [
   {
     name: 'Wordle',
     path: '/wordle',
-    image: '../../public/assets/wordlyImage.png'
+    image: '../../public/wordlyImage.png'
   },
   {
     name: 'MineSweeper',
     path: '/minesweeper',
-    image: '../../public/assets/icons8-dragaminas-100.png'
+    image: '../../public/icons8-dragaminas-100.png'
   }
   // { name: 'TickTackToe', path: '/tictactoe', image: '' }
 ]
